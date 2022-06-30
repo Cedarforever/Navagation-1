@@ -164,5 +164,6 @@ $(document).on('keypress', function (e) {
 $('.input').on('keypress', function (e) {
    e.stopPropagation();
 });
+localStorage.clear();
 },{}]},{},["epB2"], null)
-//# sourceMappingURL=main.56daa571.map
+//# sourceMappingURL=main.1870c672.map
