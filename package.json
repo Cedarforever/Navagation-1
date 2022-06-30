@@ -1,0 +1,12 @@
+{
+  "scripts": {
+    "build":"rm -rf dist && parcel build src/index.html --no-minify --public-url ."
+  },
+  "name": "xm1-qianhang",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:Cedarforever/Navigation-1.git",
+  "author": "Cedar <cedarlzp@163.com>",
+  "license": "MIT"
+}
+
