@@ -3,7 +3,7 @@
 const xx = window.localStorage.getItem('x') 
 const xxObject = JSON.parse(xx) 
 
-const hashMap =   [   
+const hashMap = [   
     {logo:'A',url:'https://www.acfun.cn'},
     {logo:'B',url:'https://www.bilibili.com'},
     {logo:'D',url:'https://developer.mozilla.org/zh-CN/'},
@@ -77,6 +77,6 @@ $(".addButton").on('click',()=>{
      $('.input').on('keypress',(e)=>{
       e.stopPropagation()
      })
-
+localStorage.clear()
 
 
