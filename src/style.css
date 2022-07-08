@@ -105,6 +105,7 @@ body {
   top: 1px;
   right: 1px;
   display: none;
+  cursor: default;
 }
 .siteList .site:hover > .close {
   display: block;
