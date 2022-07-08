@@ -2,7 +2,7 @@
     
 const xx = window.localStorage.getItem('x') 
 const xxObject = JSON.parse(xx) 
-
+//localStorage.clear()
 const hashMap =  xxObject || [   
     {logo:'A',url:'https://www.acfun.cn'},
     {logo:'B',url:'https://www.bilibili.com'},
@@ -18,7 +18,7 @@ const simplifyUrl = (url) => {
     return url.replace('https://','')
     .replace('http://','')
     .replace('www.','')
-    .replace(/\/.*/,'') //用了正则表达式  将/开头的所有内容  替换成空字符串''     
+    .replace(/\/.*/,'') //用了正则表达式  将/开头的所有内容  替换成空字符串''    
 }
       
 const render = () => {
@@ -62,7 +62,7 @@ $(".addButton").on('click',()=>{
 
      window.onbeforeunload = () =>{
         const  string = JSON.stringify(hashMap)
-        window.localStorage.setItem('x',string) 
+        window.localStorage.setItem('x',string)
      }
 
      $(document).on('keypress',(e)=>{

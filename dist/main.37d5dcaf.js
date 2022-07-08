@@ -108,11 +108,11 @@ parcelRequire = (function (modules, cache, entry, globalName) {
 
 var xx = window.localStorage.getItem('x');
 var xxObject = JSON.parse(xx);
-
+//localStorage.clear()
 var hashMap = xxObject || [{ logo: 'A', url: 'https://www.acfun.cn' }, { logo: 'B', url: 'https://www.bilibili.com' }, { logo: 'D', url: 'https://developer.mozilla.org/zh-CN/' }, { logo: 'Z', url: 'https://www.zhihu.com' }, { logo: 'G', url: 'https://www.google.com' }, { logo: 'W', url: 'https://www.w3school.com.cn/' }, { logo: 'F', url: 'https://www.figma.com/' }, { logo: 'F', url: 'https://excalidraw.com/' }];
 
 var simplifyUrl = function simplifyUrl(url) {
-   return url.replace('https://', '').replace('http://', '').replace('www.', '').replace(/\/.*/, ''); //用了正则表达式  将/开头的所有内容  替换成空字符串''     
+   return url.replace('https://', '').replace('http://', '').replace('www.', '').replace(/\/.*/, ''); //用了正则表达式  将/开头的所有内容  替换成空字符串''    
 };
 
 var render = function render() {
@@ -165,4 +165,4 @@ $('.input').on('keypress', function (e) {
    e.stopPropagation();
 });
 },{}]},{},["epB2"], null)
-//# sourceMappingURL=main.bc2c1a65.map
+//# sourceMappingURL=main.37d5dcaf.map
